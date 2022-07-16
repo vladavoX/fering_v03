@@ -40,7 +40,31 @@ const RootQuery = new GraphQLObjectType({
     }
   }
 })
+
+// Mutations
+const mutation = new GraphQLObjectType({
+  name: 'Mutation',
+  fields: {
+    addImage: {
+      type: ImageType,
+      args: {
+        name: { type: GraphQLString },
+        type: { type: GraphQLString },
+        image: { type: GraphQLString }
+      },
+      resolve(parent, args) {
+        const image = new Image({
+          name: args.name,
+          type: args.type,
+          image: args.image
+        })
+        return image.save()
+      }
+    }
+  }
+})
  
 module.exports = new GraphQLSchema({
-  query: RootQuery
+  query: RootQuery,
+  mutation
 })
