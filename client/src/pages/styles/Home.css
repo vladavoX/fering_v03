@@ -1,0 +1,47 @@
+.home {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.column-left, .column-right {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.column-left {
+  background: url('../../components/assets/bg-left.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.column-right {
+  background: url('../../components/assets/bg-right.jpg') no-repeat center;
+  background-size: cover;
+}
+
+.home button {
+  background-color: #fb0606;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.column-left:hover, .column-right:hover {
+  width: 200%;
+}
+
+@media screen and (min-width: 768px) {
+  .home button {
+    padding: 20px 40px;
+    font-size: 1.2rem;
+  }
+}

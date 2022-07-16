@@ -1,14 +1,16 @@
 import { Link } from 'react-router-dom';
 
+import './styles/Home.css';
+
 export default function Home() {
   return (
     <>
-      <div className="container">    
-        <div className="column">
-          <Link to={"/o-nama"}><button>ULAZ</button></Link>
+      <div className="home">    
+        <div className="column-left">
+          <Link to={"/o-nama"}><button>SRPSKI</button></Link>
         </div>
-        <div className="column">
-          <Link to={"/en/about"}><button>ENTER</button></Link>
+        <div className="column-right">
+          <Link to={"/en/about"}><button>ENGLISH</button></Link>
         </div>
       </div>
     </>
