@@ -1,5 +1,7 @@
-const { images, clients } = require('../sampleData.js')
 const { GraphQLObjectType, GraphQLString, GraphQLSchema, GraphQLID, GraphQLList } = require('graphql')
+
+const Image = require('../models/image.js')
+const Client = require('../models/client.js')
 
 const ClientType = new GraphQLObjectType({
   name: 'Client',
@@ -27,13 +29,13 @@ const RootQuery = new GraphQLObjectType({
       type: ClientType,
       args: { id: { type: GraphQLID } },
       resolve(parent, args) {
-        return clients.find(client => client.id === args.id)
+        return Client.findById(args.id)
       }
     },
     images: {
       type: new GraphQLList(ImageType),
       resolve(parent, args) { 
-        return images
+        return Image.find();
       }
     }
   }
