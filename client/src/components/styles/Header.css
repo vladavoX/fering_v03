@@ -5,13 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid rgb(238, 233, 233);
+  background-color: #fff;
 }
 
 .navbar a {
   text-decoration: none;
   font-size: 1.2rem;
-  margin-right: 1rem;
-  color: #fb0606;
+  margin-right: 2rem;
+  color: black;
 }
 
 .dropdown {
@@ -47,11 +49,13 @@
 
 .mobile {
   display: none;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
   .navbar {
     justify-content: flex-end;
+    border-bottom: 0.01em solid rgb(238, 233, 233);
   }
 
   .desktop {
@@ -64,6 +68,37 @@
 }
 
 .menubtn {
-  font-size: 1.4rem;
-  margin-right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+}
+
+.menu-links {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.menu-links a {
+  padding: 20px 20px;
+  border-bottom: 0.01em solid rgb(238, 233, 233);
+  margin-right: 0;
+}
+
+.menu-links-dropdown {
+  background-color: rgb(194, 194, 194);
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
