@@ -2,6 +2,10 @@ import Head from 'next/head'
 
 import Navbar from '../components/Navbar'
 import Header from '../components/Header'
+import About from '../components/About'
+import Products from '../components/Products'
+import Materials from '../components/Materials'
+import ScrollBack from '../components/ScrollBack'
 
 export default function Home() {
   return (
@@ -13,6 +17,10 @@ export default function Home() {
       </Head>
       <Navbar />
       <Header />
+      <About />
+      <Products />
+      <Materials />
+      <ScrollBack />
     </div>
   )
 }
