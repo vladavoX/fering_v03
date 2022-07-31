@@ -17,19 +17,19 @@ import '../styles/Navbar.module.css'
 const proizvodi = [
   {
     name: 'Klub Stolovi',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    description: 'Get p better understanding of where your traffic is coming from.',
     href: '/proizvodi/klub-stolovi',
     icon: BsSuitClubFill,
   },
   {
     name: 'Trpezarijski Stolovi',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: 'Speak directly to your customers in p more meaningful way.',
     href: '/proizvodi/trpezarijski-stolovi',
     icon: MdLocalDining,
   },
   {
     name: 'Industrijski Stolovi',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: 'Speak directly to your customers in p more meaningful way.',
     href: '/proizvodi/industrijski-stolovi',
     icon: GiOfficeChair,
   },
@@ -64,14 +64,14 @@ export default function Navbar() {
         <div className="flex justify-between items-center border-gray-100 py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="">
-              <a>
+              <p>
                 <span className="sr-only">Fering</span>
                 <img
                   className="h-8 w-auto sm:h-10"
                   src="/assets/logo/fering_logo.png"
                   alt="Fering logo"
                 />
-              </a>
+              </p>
             </Link>
           </div>
           <div className="-mr-2 -my-2 md:hidden">
@@ -83,9 +83,9 @@ export default function Navbar() {
 
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
             <Link href="">
-              <a  className="text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md">
+              <p  className="text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md cursor-pointer">
                 Pocetna
-              </a>
+              </p>
             </Link>
             <Popover className="relative">
               {({ open }) => (
@@ -120,13 +120,13 @@ export default function Navbar() {
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {proizvodi.map((item) => (
                             <Link href={item.href} key={item.name}>
-                              <a className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                              <p className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
                                 <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
                                 <div className="ml-4">
                                   <p className="text-base font-medium text-gray-900">{item.name}</p>
                                   <p className="mt-1 text-sm text-gray-400">{item.description}</p>
                                 </div>
-                              </a>
+                              </p>
                             </Link>
                           ))}
                         </div>
@@ -137,11 +137,11 @@ export default function Navbar() {
               )}
             </Popover>
 
-            <Link href="/materijali">
-              <a className="text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md">Materijali</a>
+            <Link href="#materials">
+              <p className="text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md cursor-pointer">Materijali</p>
             </Link>
-            <Link href="/kontakt">
-              <a className="text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md">Kontakt</a>
+            <Link href="#contact">
+              <p className="text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md cursor-pointer">Kontakt</p>
             </Link>
           </Popover.Group>
         </div>
@@ -178,10 +178,10 @@ export default function Navbar() {
                 <nav className="grid gap-y-8">
                   {proizvodi.map((item) => (
                     <Link href={item.href} key={item.name}>
-                      <a className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                      <p className="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
                         <item.icon className="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
                         <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                      </a>
+                      </p>
                     </Link>
                   ))}
                 </nav>
@@ -190,15 +190,15 @@ export default function Navbar() {
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <Link href="">
-                  <a className="text-base font-medium text-gray-900 hover:text-gray-700">Pocetna</a>
+                  <p className="text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer">Pocetna</p>
                 </Link>
 
-                <Link href="/materijali">
-                  <a className="text-base font-medium text-gray-900 hover:text-gray-700">Materijali</a>
+                <Link href="#materials">
+                  <p className="text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer">Materijali</p>
                 </Link>
 
-                <Link href="/kontakt">
-                  <a className="text-base font-medium text-gray-900 hover:text-gray-700">Kontakt</a>
+                <Link href="#contact">
+                  <p className="text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer">Kontakt</p>
                 </Link>
               </div>
             </div>

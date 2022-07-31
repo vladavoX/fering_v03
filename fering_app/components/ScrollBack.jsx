@@ -10,6 +10,8 @@ export default function ScrollBack() {
       top: 0,
       behavior: 'smooth',
     })
+    // reset url
+    window.history.pushState('', document.title, window.location.pathname)
   }
 
   useEffect(() => {

@@ -1,10 +1,10 @@
 /* This example requires Tailwind CSS v2.0+ */
 const materials = [
   {
-    name: 'INOX',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    name: 'Nerdjajuci celik',
+    description: 'Nerđajući čelici poseduju niz izuzetnih osobina koje ih razlikuju od ostalih klasa čelika. Kao prvo koroziono su rezistentni, zahvaljujući prvenstveno uticaju legirajućeg elementa hroma, u širokom spektru koroziono agresivnih sredina.',
     imageSrc: 'assets/landing_materials/inox.png',
-    imageAlt: 'INOX materijal'
+    imageAlt: 'Nerdjajuci celik tekstura'
   },
   {
     name: 'Celik',
@@ -28,19 +28,16 @@ const materials = [
 
 export default function Materials() {
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100" id="materials">
       <div className="max-w-7xl mx-auto py-24 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-2xl mx-auto text-center pb-6">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">Materijali</h2>
+          <p className="lg:text-xl sm:mt-4 text-gray-700">
+            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
+            steel divider separates active cards from new ones, or can be used to archive important task lists.
+          </p>
+        </div>
         <div className="grid lg:grid-cols-2 gap-4 sm:grid-cols-1 md:grid-cols-2">
-          <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">Materijali</h2>
-            <p className="lg:text-2xl sm:mt-4 text-gray-700">
-              The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-              steel divider separates active cards from new ones, or can be used to archive important task lists.
-            </p>
-          </div>
-          <div>
-            
-          </div>
           {materials.map((material) => (
             <div key={material.name} className="flex flex-col">
               <div className="flex-none">
