@@ -20,8 +20,9 @@ export default function Example() {
                 <span className="block text-indigo-600 xl:inline">metalnih proizvoda</span>
               </h1>
               <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-                fugiat veniam occaecat fugiat aliqua.
+                Bilo da su u pitanju stepeništa, nameštaj, konstrukcija ili nešto drugo, za Vaše dvorište, kuću,
+                halu i sl. Željeni proizvod, vredan Vašeg prostora, mora biti vrhnuskog kvaliteta i dizajna,
+                kreiran od strane radnika sa višedecenijskim iskustvom.
               </p>
             </div>
           </main>
@@ -31,7 +32,7 @@ export default function Example() {
         <img
           className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full"
           src="/assets/banner.png"
-          alt="banner"
+          alt="Slika varioca kako vari"
         />
       </div>
     </div>

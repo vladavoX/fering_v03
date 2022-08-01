@@ -1,14 +1,14 @@
 /* This example requires Tailwind CSS v2.0+ */
 const materials = [
   {
-    name: 'Nerdjajuci celik',
+    name: 'Nerđajući čelik',
     description: 'Nerđajući čelici poseduju niz izuzetnih osobina koje ih razlikuju od ostalih klasa čelika. Kao prvo koroziono su rezistentni, zahvaljujući prvenstveno uticaju legirajućeg elementa hroma, u širokom spektru koroziono agresivnih sredina.',
     imageSrc: 'assets/landing_materials/inox.png',
     imageAlt: 'Nerdjajuci celik tekstura'
   },
   {
-    name: 'Celik',
-    description: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+    name: 'Čelik',
+    description: 'Neverovatan raspon i fleksibilnost osobina (uz pomoć legiranja, termičke obrade i plastične prerade) kao i relativno niska cena proizvodnje čine ga i dalje najrasprostranjenije korišćenim metalnim materijalom.',
     imageSrc: 'assets/landing_materials/celik.png',
     imageAlt: 'Celik materijal'
   },
@@ -33,8 +33,9 @@ export default function Materials() {
         <div className="max-w-2xl mx-auto text-center pb-6">
           <h2 className="text-3xl font-extrabold tracking-tight text-gray-900">Materijali</h2>
           <p className="lg:text-xl sm:mt-4 text-gray-700">
-            The walnut wood card tray is precision milled to perfectly fit a stack of Focus cards. The powder coated
-            steel divider separates active cards from new ones, or can be used to archive important task lists.
+            Materijali od kojih se izrađuju proizvodi su veoma bitni, ne bi li oni sami bili 
+            kvalitetni i dugog životnog veka. Mi koristimo proveren materijal koji je 
+            vrhunskog kvaliteta.
           </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-4 sm:grid-cols-1 md:grid-cols-2">

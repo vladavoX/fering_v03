@@ -9,25 +9,25 @@ const features = [
   {
     name: 'Visokokvalitetni materijal',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Naši proizvodi se prave isključivo od najsavremenijeg i najkvalitetnijeg materijala. Kvaltietan materijal je sigurnost i garancija.',
     icon: HiBadgeCheck,
   },
   {
-    name: 'Garantantujemo za nas proizvod',
+    name: 'Garantantujemo za naš proizvod',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Firma Fering garantuje za sve svoje proizvode, i nudi najbolje usluge na tržištu.',
     icon: FaAward,
   },
   {
     name: 'Ispunjavamo zadate rokove',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Nikada ne probijamo zadate rokove za izradu proizvoda. Efikasni smo i brzi u našem poslu, uz kvalitetan rad.',
     icon: RiTimerFlashFill,
   },
   {
-    name: 'Otvoreni smo za Vase ideje',
+    name: 'Otvoreni smo za Vaše ideje',
     description:
-      'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.',
+      'Otvoreni smo za sve Vaše ideje i zamisli. Takođe smo spremi da Vas posavetujemo, kako bi Vaša ideja bila još bolja.',
     icon: GiTeamIdea,
   },
 ]
@@ -39,12 +39,12 @@ export default function About() {
         <div className="lg:text-center">
           <h2 className="text-base text-indigo-600 font-semibold tracking-wide uppercase">FERING</h2>
           <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-            Zasto izabrati Fering?
+            Zašto izabrati firmu Fering?
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
-            Firma Fering bavi se izradom najkvalitetnijeg stilskog namestaja, portala, kucnih biblioteka,
-            hotelskog i namestaja za svaciji dom. Odlikuje nas izuzetna preduzimljivost, mastovitost i vestina
-            da svaku vasu zamisao pretvorimo u visokokvalitetni artikal.
+            Firma Fering bavi se izradom najkvalitetnijeg stilskog nameštaja, portala, kućnih biblioteka,
+            hotelskog i nameštaja za svačiji dom. Odlikuje nas izuzetna preduzimljivost, maštovitost i veština
+            da svaku Vašu zamisao pretvorimo u visokokvalitetan proizvod.
           </p>
         </div>
 

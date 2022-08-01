@@ -17,37 +17,37 @@ import '../styles/Navbar.module.css'
 const proizvodi = [
   {
     name: 'Klub Stolovi',
-    description: 'Get p better understanding of where your traffic is coming from.',
+    description: 'U svakoj dnevnoj sobi, kao po pravilu, klub sto će zauzeti centralno mesto.',
     href: '/proizvodi/klub-stolovi',
     icon: BsSuitClubFill,
   },
   {
     name: 'Trpezarijski Stolovi',
-    description: 'Speak directly to your customers in p more meaningful way.',
+    description: 'Trpezarijski sto ima veoma dugu tradiciju kao mesto okupljanja porodice i prijatelja.',
     href: '/proizvodi/trpezarijski-stolovi',
     icon: MdLocalDining,
   },
   {
     name: 'Industrijski Stolovi',
-    description: 'Speak directly to your customers in p more meaningful way.',
+    description: 'Važno je imati kvalitetan i udoban radni sto u kancelariji kako bi svi završili na vreme.',
     href: '/proizvodi/industrijski-stolovi',
     icon: GiOfficeChair,
   },
   {
     name: 'Komode',
-    description: "Your customers' data will be safe and secure.",
+    description: "Spavaća soba nije kompletna bez lepe komode ili fiokara u kojoj će vaša odeća biti.",
     href: '/proizvodi/komode',
     icon: RiArchiveDrawerFill,
   },
   {
     name: 'Stepenista',
-    description: "Connect with third-party tools that you're already using.",
+    description: "Drvene ili metalne stepenice unutrasnje? Najpopularnije su unutrasnje stepenice od drveta bukve ili hrasta, ili pak od čelika.",
     href: '/proizvodi/stepenista',
     icon: Gi3DStairs,
   },
   {
     name: 'Ostalo',
-    description: 'Build strategic funnels that will drive your customers to convert',
+    description: 'Pogledajte raznovrsne proizvode od metalnih konstrukcija, do nameštaja za kuću.',
     href: '/proizvodi/ostalo',
     icon: HiOutlineDotsHorizontal,
   },
@@ -69,7 +69,7 @@ export default function Navbar() {
                 <img
                   className="h-8 w-auto sm:h-10"
                   src="/assets/logo/fering_logo.png"
-                  alt="Fering logo"
+                  alt="Fering logo slika"
                 />
               </p>
             </Link>
@@ -84,7 +84,7 @@ export default function Navbar() {
           <Popover.Group as="nav" className="hidden md:flex space-x-10">
             <Link href="">
               <p  className="text-base font-medium text-gray-400 hover:text-white hover:bg-gray-700 p-2 rounded-md cursor-pointer">
-                Pocetna
+                Početna
               </p>
             </Link>
             <Popover className="relative">
@@ -190,7 +190,7 @@ export default function Navbar() {
             <div className="py-6 px-5 space-y-6">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                 <Link href="">
-                  <p className="text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer">Pocetna</p>
+                  <p className="text-base font-medium text-gray-900 hover:text-gray-700 cursor-pointer">Početna</p>
                 </Link>
 
                 <Link href="#materials">

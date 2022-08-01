@@ -6,6 +6,7 @@ import About from '../components/About'
 import Products from '../components/Products'
 import Materials from '../components/Materials'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 import ScrollBack from '../components/ScrollBack'
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <Products />
       <Materials />
       <Contact />
+      <Footer />
       <ScrollBack />
     </div>
   )
